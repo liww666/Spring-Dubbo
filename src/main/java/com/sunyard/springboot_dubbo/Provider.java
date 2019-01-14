@@ -1,4 +1,4 @@
-package com.sunyard.springboot_dubbo.service;
+package com.sunyard.springboot_dubbo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

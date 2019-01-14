@@ -1,4 +1,4 @@
-package com.sunyard.springboot_dubbo.service;
+package com.sunyard.springboot_dubbo;
 
 
 import com.sunyard.springboot_dubbo.service.api.UserServiceBo;

@@ -17,8 +17,8 @@
     <dubbo:protocol name="dubbo" port="20880" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.sunyard.springboot_dubbo.service.api.UserServiceBo" ref="userService" />
+    <dubbo:service interface="com.sunyard.springboot_dubbo.service.api.UserServiceBo" ref="userService"  timeout="3000"/>
 
     <!-- 和本地bean一样实现服务 -->
-    <bean id="userService" class="com.sunyard.springboot_dubbo.service.UserServiceImpl" />
+    <bean id="userService" class="com.sunyard.springboot_dubbo.service.impl.UserServiceImpl" />
 </beans>

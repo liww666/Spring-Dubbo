@@ -1,4 +1,4 @@
-package com.sunyard.springboot_dubbo.service;
+package com.sunyard.springboot_dubbo.service.impl;
 
 
 import com.sunyard.springboot_dubbo.service.api.UserServiceBo;
@@ -8,8 +8,13 @@ import com.sunyard.springboot_dubbo.service.api.UserServiceBo;
  */
 public class UserServiceImpl implements UserServiceBo {
     @Override
-    public String sayHello(String s) {
+    public String sayHello(String s)  {
         System.out.println("-----service invoked!-----");
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "Hello"+s;
     }
 }
