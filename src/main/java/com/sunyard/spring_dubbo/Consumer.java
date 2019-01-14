@@ -1,7 +1,7 @@
-package com.sunyard.springboot_dubbo;
+package com.sunyard.spring_dubbo;
 
 
-import com.sunyard.springboot_dubbo.service.api.UserServiceBo;
+import com.sunyard.spring_dubbo.service.api.UserServiceBo;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

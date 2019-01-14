@@ -1,7 +1,7 @@
-package com.sunyard.springboot_dubbo.service.impl;
+package com.sunyard.spring_dubbo.service.impl;
 
 
-import com.sunyard.springboot_dubbo.service.api.UserServiceBo;
+import com.sunyard.spring_dubbo.service.api.UserServiceBo;
 
 /**
  * Created by Administrator on 2019/1/12.
@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserServiceBo {
     public String sayHello(String s)  {
         System.out.println("-----service invoked!-----");
         try {
-            Thread.sleep(4000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

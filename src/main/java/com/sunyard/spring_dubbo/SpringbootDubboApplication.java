@@ -1,8 +1,7 @@
-package com.sunyard.springboot_dubbo;
+package com.sunyard.spring_dubbo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 //@ImportResource(locations="classpath:provider.xml")
