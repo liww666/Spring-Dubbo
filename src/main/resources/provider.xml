@@ -36,7 +36,7 @@
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.sunyard.spring_dubbo.service.api.UserServiceBo" ref="userService" version="1.0.0"/>
 
-    <dubbo:service interface="com.sunyard.spring_dubbo.service.api.UserServiceBo" ref="userService2" version="2.0.0"/>
+    <dubbo:service interface="com.sunyard.spring_dubbo.service.api.UserServiceBo" ref="userService2" version="2.0.0" stub="com.sunyard.spring_dubbo.service.impl.UserServiceStub"/>
     <!-- 和本地bean一样实现服务 -->
     <bean id="userService" class="com.sunyard.spring_dubbo.service.impl.UserServiceImpl" />
     <bean id="userService2" class="com.sunyard.spring_dubbo.service.impl.UserServiceImpl2" />
