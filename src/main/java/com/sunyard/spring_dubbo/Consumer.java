@@ -12,7 +12,9 @@ public class Consumer {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"classpath:consumer.xml"});
         context.start();
         UserServiceBo userServiceBo=(UserServiceBo)context.getBean("userService");
-        System.out.println(userServiceBo.sayHello(" dubbo"));
+        for(int i=0;i<10;i++){
+            System.out.println(userServiceBo.sayHello(" dubbo"));
+        }
         System.in.read(); // 按任意键退出
     }
 }

@@ -9,12 +9,12 @@ import com.sunyard.spring_dubbo.service.api.UserServiceBo;
 public class UserServiceImpl implements UserServiceBo {
     @Override
     public String sayHello(String s)  {
-        System.out.println("-----service invoked!-----");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        System.out.println(Thread.currentThread().getName()+"-----service invoked!-----");
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         return "Hello"+s;
     }
 }
